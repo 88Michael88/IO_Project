@@ -81,6 +81,7 @@ Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzie
 * Moduł Budżetowania
 * Moduł Celów Oszczędnościowych
 * Moduł Raportowania i Wizualizacji
+* Moduł Agregacji Danych z Innych Źródeł
 
 ### 2.2. Klasy Użytkowników
 * **Użytkownik Standardowy:** opis
@@ -102,6 +103,14 @@ patrz dodatek b
 * **Ograniczenie:** Wersja MVP musi powstać w 10 tygodni.
 * **Źródło:** Czas trwania semestru / wymogi zaliczenia.
 * **Wpływ na architekturę:** Rezygnacja z automatycznej integracji z bankami API.
+
+**Ograniczenie 4: Ilość generowanych danych**
+* **Ograniczenie:** System musi przedstawić wiarygodne dany użytkownikowi. Nie może zgubić transakcji lub ją policzyć dwa razy.
+* **Źródło:** Użytkownicy będą zapisywać oraz importować ogromne ilości danych, a nasz system musi to zapisać.
+* **Wpływ na architekturę:** 
+    * Baza danych musi priorytetyzować spójność danych (Consistency) oraz dostępność (Availability).
+    * Narzuca to konieczność wybrania bazy danych typu SQL.
+
 
 ### 2.4. Założenia projektowe
 **Założenie 1: Zaangażowanie użytkownika**
