@@ -8,9 +8,15 @@
 ## 1. Wstęp
 
 ### 1.1. Cel
+
+Wise Finance 1.0
+Dokument ma na celu...
+
 ### 1.2. Wizja, Zakres i Cele Produktu
 
-**Wizja:**
+**Wizja:** 
+"Wise Finance" pomoże osiągnąć niezależność finansową naszym klientom.
+
 **Zakres:**
 System "Wise Finance" będzie realizował następujące procesy:
 1.  Ewidencja przychodów i wydatków.
@@ -18,10 +24,14 @@ System "Wise Finance" będzie realizował następujące procesy:
 3.  Zarządzanie budżetami miesięcznymi.
 4.  Definiowanie i śledzenie celów oszczędnościowych.
 5.  Raportowanie i wizualizacja danych finansowych.
+6.  Zgromadzenie danych finansowych z różnych źródeł.
 
 **Cele Biznesowe i Użytkowników (KPIs):**
 
 **Poza Zakresem:**
+1. System nie będzie doradzał klientom jak gospodarować bogactwem.
+2. System nie będzie proponował budżetów.
+
 ### 1.3. Definicje, Akronimy i Skróty
 
 Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzieląc ją na pojęcia domenowe (biznesowe), techniczne oraz prawne.
@@ -55,6 +65,13 @@ Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzie
 * **RODO (GDPR):** Rozporządzenie o Ochronie Danych Osobowych. Unijne prawo regulujące zasady przetwarzania danych osobowych, narzucające na System wymogi dotyczące m.in. szyfrowania danych, prawa do bycia zapomnianym i eksportu danych.
 
 ### 1.4. Przegląd Dokumentu
+
+*Podrozdział 1*
+*Podrozdział 2*
+*Podrozdział 3*
+*Podrozdział 4*
+*Podrozdział 5*
+
 ---
 
 ## 2. Opis Ogólny
