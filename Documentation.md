@@ -134,6 +134,7 @@ patrz dodatek b
 ## 3. Wymagania Funkcjonalne
 
 ### 3.1. Wprowadzanie miesięcznych zarobków i wydatków
+
 **Opis:** Umożliwia użytkownikowi dodanie nowej transakcji (przychód lub wydatek) do systemu.
 **Historyjka Użytkownika:**
 > Jako użytkownik dbający o finanse,
@@ -141,6 +142,7 @@ patrz dodatek b
 > abym miał aktualny stan moich finansów.
 
 **Cel Biznesowy:** Zbudowanie bazy danych do analizy finansowej.
+
 **Kryteria Akceptacji:**
 
 * **WF-TRANS-01: Dodanie wydatku (Scenariusz Główny)**
@@ -154,6 +156,7 @@ patrz dodatek b
     * **When:** Wpisuję ujemną kwotę lub litery w polu kwoty.
     * **Then:** Przycisk "Zapisz" pozostaje nieaktywny.
     * **And:** Wyświetla się komunikat walidacji.
+
 
 ### 3.2. Kategoryzowanie wydatków
 **Opis:** Przypisywanie etykiet do transakcji.
@@ -174,6 +177,25 @@ patrz dodatek b
 **Opis:** Prezentacja danych na wykresach oraz zestawienia tabelaryczne.
 **Historyjka Użytkownika:** 
 **Kryteria Akceptacji (Gherkin):** 
+
+### 3.6. Etapowe ładowanie strony
+
+**Opis:** Użytkownik widzi jak strona ładuje się etapami.
+
+**Historyjka Użytkownika:**
+> Jako użytkownik gdy załaduję stronę nie chcę czekać, 
+> aż cała strona z danymi mi się załaduje,
+> chciałbym widzieć etapowe (sukcesywne) załadowanie poszczególnych elementów.
+
+**Cel Biznesowy:** Użytkownik nie myśli, że nasza strona zawiesza się lub ma jakieś problemy.
+
+**Kryteria Akceptacji:**
+
+* **WF-ETAP-01: Ładowanie etapami (Scenariusz Główny)**
+    **Given:** Użytkownik wchodzi na naszą stronę albo aplikację mobilną.
+    **When:** Użytkownik widzi jak etapowo ładuję się UI.
+    **Then:** Ładują się etapami dane.
+    **And:** Po załadowaniu danych ładują się wszystkie obliczenia wykonane na tych danych.
 
 ### 3.6. Priorytetyzacja Wymagań (Analiza MVP)
 
