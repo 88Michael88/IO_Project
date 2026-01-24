@@ -119,6 +119,15 @@ patrz dodatek b
 * **Plan walidacji:** Testy użyteczności prototypu UX – mierzenie czasu dodawania 1 wydatku (musi być < 10 sek).
 
 **Założenie 2: Techniczne**
+* **Treść:** Użytkownicy 
+* **Ryzyko:**
+* **Plan walidacji:**
+    * **Co:** Sprawdzimy przepustowość naszej bazy danych.
+    * **Jak:** Prosty skrypt zostanie napisany, który:
+        * będzie zapisywał (INSERT) coraz więcej danych,
+        * będzie czytał (SELECT) coraz więcej danych.
+    * **Kiedy:** Przy wyborze bazy danych.
+    * **Kto:** Jeden z deweloperów.
 
 ---
 
