@@ -10,6 +10,7 @@
 ### 1.1. Cel
 
 Wise Finance 1.0
+
 Dokument ma na celu...
 
 ### 1.2. Wizja, Zakres i Cele Produktu
@@ -119,13 +120,15 @@ patrz dodatek b
 * **Plan walidacji:** Testy użyteczności prototypu UX – mierzenie czasu dodawania 1 wydatku (musi być < 10 sek).
 
 **Założenie 2: Techniczne**
-* **Treść:** Użytkownicy 
-* **Ryzyko:**
+* **Treść:** System będzie w stanie obsłużyć duże ilość danych bez zauważalnych opóźnień. 
+* **Ryzyko:** Jeśli baza danych nie obsłuży zapis oraz odczyt dużych ilości danych, to aplikacja będzie działać jakby była zawieszona. To może prowadzić do frustracji użytkowników.
 * **Plan walidacji:**
     * **Co:** Sprawdzimy przepustowość naszej bazy danych.
     * **Jak:** Prosty skrypt zostanie napisany, który:
         * będzie zapisywał (INSERT) coraz więcej danych,
-        * będzie czytał (SELECT) coraz więcej danych.
+            * średni czas zapisu rekordu powinna wynosić do 10ms,
+        * będzie czytał (SELECT) coraz więcej danych,
+            * średni czas odczytu 100 rekordów powinien wynosić do 50ms.
     * **Kiedy:** Przy wyborze bazy danych.
     * **Kto:** Jeden z deweloperów.
 
