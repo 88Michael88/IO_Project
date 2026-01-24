@@ -387,8 +387,8 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 | **Bodziec**       | Klient włącza aplikację i otwiera kartę ze swoimi finasami.                                            |
 | **Artefakt**      | Graficzny Interface Użytkownika, nasz serwer oraz bazę danych. |
 | **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
-| **Reakcja**       | |
-| **Miara reakcji** | |
+| **Reakcja**       | System załaduje dane użytkownika w odpowiednich czasie. |
+| **Miara reakcji** | 200ms będzie średnim czasem załadowania danych, a 500ms będzie dziewięćdziesiątym percentylem czasu.|
 
 
 **Scenariusz 5: Wydajność (Zapis danych)**
@@ -398,8 +398,8 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 | **Bodziec**       | Klient zapisuje swoje finase.                                            |
 | **Artefakt**      | Graficzny Interface Użytkownika, nasz serwer oraz bazę danych. |
 | **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
-| **Reakcja**       | |
-| **Miara reakcji** | |
+| **Reakcja**       | System zapisze dane użytkownika w odpowiednim czasie. |
+| **Miara reakcji** | 300ms będzie średnim czasem zapisu danych, a 800ms będzie dziewięćdziesiątym percentylem czasu.|
 
 
 **Scenariusz 6: Wydajność (Generowanie Raportów)**
@@ -409,7 +409,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 | **Bodziec**       | Klient otwiera zakładkę "Raport" i wybiera jak chciałby przedstawić dane. |
 | **Artefakt**      | Graficzny Interface Użytkownika. |
 | **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
-| **Reakcja**       | |
+| **Reakcja**       | System |
 | **Miara reakcji** | |
 
 
