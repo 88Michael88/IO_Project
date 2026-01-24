@@ -331,18 +331,13 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 ### 4.1. Wybór i priorytetyzacja atrybutów
 1.  **Bezpieczeństwo** 
     * Dane finansowe są krytyczne dla klienta oraz dla reputacji naszej firmy.
-    * Nie możemy pozwolić na jakikolwiek wyciek danych, który by identyfikował naszych klientów oraz ich stan finansowy.
+    * Nie możemy pozwolić na jakikolwiek wyciek danych, który by identyfikował naszych klientów oraz ich stan finasowy.
 2.  **Użyteczność**
-    * Interface jest intuitywny: Nowy użytkownik powinien być wstanie nową transakcję do 50 sekund.
-    * Logiczne ustawienie opcji: Nowy użytkownik powinien być wstanie poznać wszystkie główne opcje w ciągu pięciu minut eksplorowania aplikacji.
+    * Aplikacja musi być wygodna na mobile, żeby ludzie chcieli wpisywać wydatki.
 3.  **Wydajność** 
-    * Zapisywanie do 100 rekordów danych musi trwać:
-        * 300ms średnio, a
-        * 800ms powinien być dziewięćdziesiątym percentylem.
-    * Odczyt danych musi trwać: 
-        * 200ms średnio, a
-        * 500ms powinien być dziewięćdziesiątym percentylem.
-    * Wykresy muszą generować się w 100ms dla 100 rekordów danych.
+    * Zapisywanie danych musi być szybkie,
+    * Odczyt danych musi być szybki,
+    * Raporty muszą generować się szybko.
 
 ### 4.2. Scenariusze Jakościowe (Dla TOP 3)
 
