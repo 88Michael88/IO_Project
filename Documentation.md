@@ -300,10 +300,31 @@ Użytkownik nie myśli, że nasza strona zawiesza się lub ma jakieś problemy
 
 ### 3.7. Priorytetyzacja Wymagań (Analiza MVP)
 
-jakaś tabelka
+Poniższa tabela przedstawia analizę priorytetów dla zidentyfikowanych funkcjonalności systemu *Wise Finance*.
+Do oceny wykorzystano skalę Fibonacciego (1, 2, 3, 5, 8, 13, 21), priorytet obliczono według wzoru:
+`Priorytet = (Korzyść + Kara) / (Koszt + Ryzyko)`
 
-**Uzasadnienie wyboru MVP:**
----
+| ID | Funkcjonalność | Korzyść (User Value) | Kara (Business Loss) | Koszt (Dev Effort) | Ryzyko (Complexity) | Priorytet | Decyzja (MVP) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **3.1** | **Wprowadzanie transakcji** | 21 | 21 | 5 | 2 | **6.00** | **TAK** |
+| **3.2** | **Kategoryzowanie wydatków** | 13 | 8 | 3 | 1 | **5.25** | **TAK** |
+| **3.5** | **Raporty i Wizualizacja** | 13 | 8 | 8 | 3 | **1.91** | **TAK** |
+| **3.3** | **Zarządzanie Budżetami** | 8 | 5 | 5 | 3 | **1.63** | **TAK** |
+| **3.4** | **Cele oszczędnościowe** | 5 | 3 | 3 | 2 | **1.60** | **MOŻE** |
+| **2.1*** | **Agregacja danych z banków** | 13 | 5 | 21 | 13 | **0.53** | **NIE** |
+| **3.6** | **Etapowe ładowanie strony** | 3 | 2 | 5 | 3 | **0.63** | **NIE** |
+
+*\*Funkcjonalność wspomniana w Opisie Ogólnym, ale wykraczająca poza MVP ze względu na złożoność.*
+
+#### Uzasadnienie wyboru zakresu MVP:
+Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viable Product)** zakwalifikowano funkcjonalności o współczynniku priorytetu powyżej **1.6**.
+
+1.  **Fundament Systemu (3.1, 3.2):** Najwyższy wynik uzyskały funkcje wprowadzania i kategoryzacji transakcji. Są one niezbędne do działania aplikacji, bez danych wejściowych Aplikacja nie dostarcza żadnej wartości. Ryzyko techniczne jest tu niskie, a kara za brak tych funkcji krytyczna.
+2.  **Wartość dla Użytkownika (3.5, 3.3):** Raporty oraz Budżety stanowią o "inteligencji" systemu. Chociaż ich koszt implementacji jest wyższy (biblioteki wykresów, logika limitów), korzyść dla użytkownika przeważa nad kosztami. To te funkcje odróżniają aplikację od zwykłego notatnika.
+3.  **Funkcje odrzucone lub odłożone:**
+    * **Agregacja danych (Automatyczna):** Mimo dużej korzyści, koszt i ryzyko (integracja z API bankowymi, PSD2) są zbyt wysokie na 10-tygodniowy projekt (zgodnie z Ograniczeniem 3).
+    * **Etapowe ładowanie (3.6):** Jest to usprawnienie UX, które ma niską wartość biznesową w początkowej fazie. Zostanie zrealizowane dopiero po stabilizacji głównych funkcji.
+    * **Cele oszczędnościowe (3.4):** Zostały oznaczone jako "MOŻE". Jeśli starczy czasu po implementacji Raportów i Budżetów, zostaną dodane, ponieważ są stosunkowo tanie w implementacji (niski koszt), ale nie są krytyczne dla podstawowego procesu kontroli wydatków.
 
 ## 4. Atrybuty Jakościowe (Wymagania Niefunkcjonalne)
 
