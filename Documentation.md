@@ -332,6 +332,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 1.  **Bezpieczeństwo** 
     * Dane finansowe są krytyczne dla klienta oraz dla reputacji naszej firmy.
     * Nie możemy pozwolić na jakikolwiek wyciek danych, który by identyfikował naszych klientów oraz ich stan finansowy.
+    * Nasze serwisy będą działać jedynie z protokołami wersji Secure.
 2.  **Użyteczność**
     * Interface jest intuitywny: Nowy użytkownik powinien być wstanie nową transakcję do 50 sekund.
     * Logiczne ustawienie opcji: Nowy użytkownik powinien być wstanie poznać wszystkie główne opcje w ciągu pięciu minut eksplorowania aplikacji.
@@ -347,14 +348,70 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 ### 4.2. Scenariusze Jakościowe (Dla TOP 3)
 
 **Scenariusz 1: Bezpieczeństwo (Poufność danych)**
-| Element | Opis |
-| :--- | :--- |
+| Element           | Opis |
+| :---              | :--- |
 | **Źródło bodźca** | Nieautoryzowany atakujący / wyciek bazy danych. |
-| **Bodziec** | Próba odczytu danych użytkowników bezpośrednio z bazy. |
-| **Artefakt** | Baza danych systemu Wise Finance. |
-| **Środowisko** | Normalna praca systemu, serwer produkcyjny. |
-| **Reakcja** | Dane są zaszyfrowane i niemożliwe do odczytania bez klucza. |
+| **Bodziec**       | Próba odczytu danych użytkowników bezpośrednio z bazy. |
+| **Artefakt**      | Baza danych systemu Wise Finance. |
+| **Środowisko**    | Normalna praca systemu, serwer produkcyjny. |
+| **Reakcja**       | Dane są zaszyfrowane i niemożliwe do odczytania bez klucza. |
 | **Miara reakcji** | 100% haseł zahaszowanych, dane wrażliwe (kwoty, opisy) szyfrowane algorytmem AES-256. |
+
+
+**Scenariusz 2: Bezpieczeństwo (Szyfrowanie połączenia)**
+| Element           | Opis |
+| :---              | :--- |
+| **Źródło bodźca** | Osoba pomiędzy klientem (end user), a naszym systemem.                                |
+| **Bodziec**       | Próba odczytu komunikacji pomiędzy klientem, a naszym systemem.                       |
+| **Artefakt**      | Połączenie pomiędzy klientem, a naszym serwerem.                                      |
+| **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                           |
+| **Reakcja**       | Każde połączenie z użytkownikiem jest szyfrowane.                                     |
+| **Miara reakcji** | Każdy kanał komunikacji będze wykożystywał protokół wersji Secure. Każdy kanał będzie testowany, aby zweryfikować poprawność konfiguracji. |
+
+
+**Scenariusz 3: Użyteczność (Logicznie ułożony interface)**
+| Element           | Opis |
+| :---              | :--- |
+| **Źródło bodźca** | Klient.                                                                                                   |
+| **Bodziec**       | Użytkownik będzie chciał wykonać jedną z podstawowych funkcji.                                            |
+| **Artefakt**      | Graficzny Interface Użytkownika.                                                                          |
+| **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
+| **Reakcja**       | Jeśli użytkownik kliknie na zakładkę, to system powinien pokazać podkategorie.                            |
+| **Miara reakcji** | Nowy użytkownik powinien poznać główne funkcjonalności systemu w ciągu pięciu minut eksplorowania systemu.|
+
+
+**Scenariusz 4: Wydajność (Odczyt danych)**
+| Element           | Opis |
+| :---              | :--- |
+| **Źródło bodźca** | Klient.                                                                                                   |
+| **Bodziec**       | Klient włącza aplikację i otwiera kartę ze swoimi finasami.                                            |
+| **Artefakt**      | Graficzny Interface Użytkownika, nasz serwer oraz bazę danych. |
+| **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
+| **Reakcja**       | |
+| **Miara reakcji** | |
+
+
+**Scenariusz 5: Wydajność (Zapis danych)**
+| Element           | Opis |
+| :---              | :--- |
+| **Źródło bodźca** | Klient.                                                                                                   |
+| **Bodziec**       | Klient zapisuje swoje finase.                                            |
+| **Artefakt**      | Graficzny Interface Użytkownika, nasz serwer oraz bazę danych. |
+| **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
+| **Reakcja**       | |
+| **Miara reakcji** | |
+
+
+**Scenariusz 6: Wydajność (Generowanie Raportów)**
+| Element           | Opis |
+| :---              | :--- |
+| **Źródło bodźca** | Klient.                                                                                                   |
+| **Bodziec**       | Klient otwiera zakładkę "Raport" i wybiera jak chciałby przedstawić dane. |
+| **Artefakt**      | Graficzny Interface Użytkownika. |
+| **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
+| **Reakcja**       | |
+| **Miara reakcji** | |
+
 
 ### 4.3. Analiza kompromisów architektonicznych
 * **Bezpieczeństwo vs Wydajność:** Szyfrowanie każdego rekordu w bazie spowolni wyszukiwanie i generowanie raportów, ale jest konieczne dla ochrony prywatności.
