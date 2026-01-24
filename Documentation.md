@@ -214,12 +214,12 @@ to zwiększy zaufanie do firmy i utrzyma klientów.
     * **When:** wybiorę opcję "Dodaj limit", ustalę limit na daną kategorię w konkretny miesiąc
     * **Then:** limit zostanie zapisany.
     
-* **WF-CONT-BUD-02: Powiadomienie o zbliżeniu się do limitu (Scenariusz Główny)**
+* **WF-CONT-BUD-02: Powiadomienie o zbliżeniu się do limitu**
     * **Given:** Ustalę limit na daną kategorię w konkretnym miesiącu
     * **When:** wydam 80% budżetu w danej kategorii 
     * **Then:** dostanę powiadomienie o zbliżeniu się do limitu.
 
-* **WF-CONT-BUD-03: Powiadomienie o przekroczeniu limitu (Scenariusz Główny)**
+* **WF-CONT-BUD-03: Powiadomienie o przekroczeniu limitu**
     * **Given:** Ustalę limit na daną kategorię w konkretnym miesiącu
     * **When:** wydam ponad 100% budżetu w danej kategorii 
     * **Then:** dostanę powiadomienie o przekroczeniu limitu
@@ -248,8 +248,35 @@ które motywują do kontynuowania z naszymi usługami.
 
 ### 3.5. Generowanie raportów i Wizualizacja danych
 **Opis:** Prezentacja danych na wykresach oraz zestawienia tabelaryczne.
+
 **Historyjka Użytkownika:** 
-**Kryteria Akceptacji (Gherkin):** 
+> Jako użytkownik,
+> chciałbym w wizualny sposób przedstawić swoje dane,
+> abym mógł przeanalizować i zobaczyć tendencje moich transakcji
+
+**Cel Biznesowy:**
+Zachęcić klientów do regularnego analizowania swoich finansów,
+co pozwoli im podejmować lepsze decyzje finansowe.
+
+**Kryteria Akceptacji:** 
+* **WF-RAP-VI-01: Przedstawienie danych w formie wykresu (Scenariusz Główny)**
+    * **Given:** Wchodzę do zakładki "Raporty"
+    * **And:** posiadam transakcje
+    * **When:** wybieram przedział czasowy
+    * **Then:** system wyświetla wykres z wydatkami w danym przedziale czasowym
+
+* **WF-RAP-VI-02: Przedstawienie danych w formie tabeli**
+    * **Given:** Wchodzę do zakładki "Raporty"
+    * **And:** posiadam transakcje
+    * **When:** wybieram przedział czasowy 
+    * **And:** wybieram opcję "Widok Tabelaryczny"
+    * **Then:** system wyświetla listę transakcji w formie tabeli
+
+* **WF-RAP-VI-03: Przedstawienie danych według kategorii**
+    * **Given:** Wchodzę do zakładki "Raporty"
+    * **And:** posiadam transakcje z przypisanymi kategoriami
+    * **When:** wybieram opcję "Podziel na Kategorie"
+    * **Then:** system wyświetla podział wydatków na kategorie
 
 ### 3.6. Etapowe ładowanie strony
 
@@ -270,7 +297,7 @@ Użytkownik nie myśli, że nasza strona zawiesza się lub ma jakieś problemy
     **Then:** Ładują się etapami dane.
     **And:** Po załadowaniu danych ładują się wszystkie obliczenia wykonane na tych danych.
 
-### 3.6. Priorytetyzacja Wymagań (Analiza MVP)
+### 3.7. Priorytetyzacja Wymagań (Analiza MVP)
 
 jakaś tabelka
 
