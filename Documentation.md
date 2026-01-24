@@ -332,7 +332,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 1.  **Bezpieczeństwo** 
     * Dane finansowe są krytyczne dla klienta oraz dla reputacji naszej firmy.
     * Nie możemy pozwolić na jakikolwiek wyciek danych, który by identyfikował naszych klientów oraz ich stan finansowy.
-    * Nasze serwisy będą działać jedynie z protokołami wersji Secure.
+    * Nasze serwisy będą działać jedynie z protokołami wersji `Secure`.
 2.  **Użyteczność**
     * Interface jest intuitywny: Nowy użytkownik powinien być wstanie nową transakcję do 50 sekund.
     * Logiczne ustawienie opcji: Nowy użytkownik powinien być wstanie poznać wszystkie główne opcje w ciągu pięciu minut eksplorowania aplikacji.
@@ -414,8 +414,13 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 
 
 ### 4.3. Analiza kompromisów architektonicznych
-* **Bezpieczeństwo vs Wydajność:** Szyfrowanie każdego rekordu w bazie spowolni wyszukiwanie i generowanie raportów, ale jest konieczne dla ochrony prywatności.
-dodac
+
+* **Bezpieczeństwo vs Wydajność:** 
+    * Szyfrowanie każdego rekordu w bazie spowolni wyszukiwanie i generowanie raportów, ale jest konieczne dla ochrony prywatności.
+    * Szyfrowanie każdego kanału komunikacji doda dodatkowy stały koszt szyfrowanie oraz deszyfrowania, jednak dla produktu takiego typu jest to niezbędne.
+
+* **Bezpieczeństwo vs Aktualizacje:**
+    * Ze względu na dodatkowe testy, które będą potwierdzały bezpieczeństwo naszego systemu, to finalne aktualizacje mogę być opóźniane.
 
 ---
 
