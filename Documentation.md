@@ -112,7 +112,6 @@ patrz dodatek b
     * Baza danych musi priorytetyzować spójność danych (Consistency) oraz dostępność (Availability).
     * Narzuca to konieczność wybrania bazy danych typu SQL.
 
-
 ### 2.4. Założenia projektowe
 **Założenie 1: Zaangażowanie użytkownika**
 * **Treść:** Użytkownicy będą wprowadzać wydatki manualnie na bieżąco (codziennie/raz na tydzień).
@@ -282,7 +281,6 @@ co pozwoli im podejmować lepsze decyzje finansowe.
     * **Then:** system wyświetla podział wydatków na kategorie
 
 ### 3.6. Etapowe ładowanie strony
-
 **Opis:** Użytkownik widzi jak strona ładuje się etapami.
 
 **Historyjka Użytkownika:**
