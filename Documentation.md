@@ -176,10 +176,10 @@ patrz dodatek b
     * **When:** dodaję transakcję 
     * **Then:** wybieram etykietę do transakcji.
 
-* **WF-KAT-WYD-02: Nie dodanie etykiety (Scenariusz Alternatywny)**
+* **WF-KAT-WYD-03: Nie dodanie etykiety (Scenariusz Alternatywny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
-    * **Then:** nie wybrać do etykietę do transakcji.
+    * **:** nie wybrać do etykietę do transakcji.
 
 ### 3.3. Zarządzanie budżetami (Dodawanie budżetów)
 **Opis:** Możliwość ustalenia limitu wydatków na daną kategorię w miesiącu.
@@ -192,8 +192,8 @@ patrz dodatek b
 
 * **WF-CONT-BUD-01: Dodanie limitu na daną kategorię (Scenariusz Główny)**
     * **Given:** Wchodzę do zakładki "Budżet"
-    * **And:** znajduję się pod kategorii "Zarządzanie budżetem"
-    * **When:** ustalę limit na daną kategorię w konkretny miesiąc
+    * **And:** znajduję się w pod kategorii "Zarządzanie budżetem"
+    * **When:** wybiorę opcję "Dodaj limit", ustalę limit na daną kategorię w konkretny miesiąc
     * **Then:** limit zostanie zapisany.
     
 * **WF-CONT-BUD-02: Powiadomienie o zbliżeniu się do limitu (Scenariusz Główny)**
@@ -209,7 +209,19 @@ patrz dodatek b
 ### 3.4. Cele oszczędnościowe
 **Opis:** Definiowanie celu (np. "Wakacje") i kwoty docelowej.
 **Historyjka Użytkownika:** 
-**Kryteria Akceptacji (Gherkin):** 
+> Jako użytkownik,
+> chciałbym wyznaczyć widoczny cel oszczędnościowy z kwotą,
+> aby mieć motywację i kontrolę nad oszczędnościami.
+
+**Kryteria Akceptacji:** 
+* **WF-GOAL-01: Ustalenie nowego celu oszczędnościowego**
+    * **Given:** Wchodzę do zakładki "Budżet".
+    * **And:** znajduję się w pod kategorii "Cel oszczędnościowy"
+    * **When:** Wybieram opcję "Dodaj Cel", 
+    * **And:** wpisuję kwotę jaką chce oszczędzić
+    * **And:** datę do kiedy chcę osiągnąć cel 
+    * **And:** ustalam nazwę celu
+    * **Then:** cel pojawia się na liście celi oszczędnościowych.
 
 ### 3.5. Generowanie raportów i Wizualizacja danych
 **Opis:** Prezentacja danych na wykresach oraz zestawienia tabelaryczne.
