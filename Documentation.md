@@ -168,18 +168,25 @@ patrz dodatek b
 * **WF-KAT-WYD-01: Dodanie etykiety z kolorem (Scenariusz Główny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
-    * **Then:** wybieram etykietę do transakcji
+    * **And:** wybieram etykietę do transakcji
     * **And:** daję kolor etykiecie.
+    * **Then:** transakcja zostanie zapisana z wybraną etykietą i kolorem
+    * **And:** etykieta będzie widoczna przy transakcji
+    
 
 * **WF-KAT-WYD-02: Dodanie etykiety bez koloru (Scenariusz Alternatywny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
-    * **Then:** wybieram etykietę do transakcji.
+    * **And:** wybieram etykietę do transakcji
+    * **Then:** transakcja zostanie zapisana z wybraną etykietą
+    * **And:** transakcja będzie miała domyśli kolor.
+    * **And:** etykieta będzie widoczna przy transakcji
 
 * **WF-KAT-WYD-03: Nie dodanie etykiety (Scenariusz Alternatywny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
-    * **:** nie wybrać do etykietę do transakcji.
+    * **And:** nie wybrać do etykietę do transakcji.
+    * **Then:** transakcja zostanie zapisana bez etykiety.
 
 ### 3.3. Zarządzanie budżetami (Dodawanie budżetów)
 **Opis:** Możliwość ustalenia limitu wydatków na daną kategorię w miesiącu.
