@@ -136,15 +136,16 @@ patrz dodatek b
 ### 3.1. Wprowadzanie miesięcznych zarobków i wydatków
 
 **Opis:** Umożliwia użytkownikowi dodanie nowej transakcji (przychód lub wydatek) do systemu.
+
 **Historyjka Użytkownika:**
 > Jako użytkownik dbający o finanse,
 > chcę szybko dodać paragon po zakupach,
 > abym miał aktualny stan moich finansów.
 
-**Cel Biznesowy:** Zbudowanie bazy danych do analizy finansowej.
+**Cel Biznesowy:** 
+Zbudowanie bazy danych do analizy finansowej.
 
 **Kryteria Akceptacji:**
-
 * **WF-TRANS-01: Dodanie wydatku (Scenariusz Główny)**
     * **Given:** Jestem zalogowany i widzę pulpit główny.
     * **When:** Wybieram opcję "Dodaj wydatek", wpisuję kwotę, datę i kategorię.
@@ -159,12 +160,17 @@ patrz dodatek b
 
 ### 3.2. Kategoryzowanie wydatków
 **Opis:** Przypisywanie kolorowych etykiet do transakcji.
+
 **Historyjka Użytkownika:** 
 > Jako użytkownik,
 > chcę nie tylko odróżnić swoje transakcje nazwami,
 > ale też kolorami. 
-**Kryteria Akceptacji:** 
 
+**Cel biznesowy:** 
+Ułatwić użytkownikowi rozpoznawanie oraz analizę transakcji,
+co ma zachęcić do częstszego wykorzystania aplikacji.
+
+**Kryteria Akceptacji:** 
 * **WF-KAT-WYD-01: Dodanie etykiety z kolorem (Scenariusz Główny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
@@ -172,7 +178,6 @@ patrz dodatek b
     * **And:** daję kolor etykiecie.
     * **Then:** transakcja zostanie zapisana z wybraną etykietą i kolorem
     * **And:** etykieta będzie widoczna przy transakcji
-    
 
 * **WF-KAT-WYD-02: Dodanie etykiety bez koloru (Scenariusz Alternatywny)**
     * **Given:** Wchodzę na stronę 
@@ -190,13 +195,19 @@ patrz dodatek b
 
 ### 3.3. Zarządzanie budżetami (Dodawanie budżetów)
 **Opis:** Możliwość ustalenia limitu wydatków na daną kategorię w miesiącu.
+
 **Historyjka Użytkownika:** 
 > Jako użytkownik,
 > chcąc mieć finansową niezależność,
 > muszę zacząć panować nad pewnymi kategoriami zakupów,
 > aby zacząć nad tym panować muszę ustalić limity.
-**Kryteria Akceptacji:** 
 
+**Cel biznesowy:**
+Pomóc klientom kontrolować swój budżet w kluczowych miejscach
+oraz ostrzeganie przed przekroczeniem limitu,
+to zwiększy zaufanie do firmy i utrzyma klientów.
+
+**Kryteria Akceptacji:** 
 * **WF-CONT-BUD-01: Dodanie limitu na daną kategorię (Scenariusz Główny)**
     * **Given:** Wchodzę do zakładki "Budżet"
     * **And:** znajduję się w pod kategorii "Zarządzanie budżetem"
@@ -215,10 +226,15 @@ patrz dodatek b
 
 ### 3.4. Cele oszczędnościowe
 **Opis:** Definiowanie celu (np. "Wakacje") i kwoty docelowej.
+
 **Historyjka Użytkownika:** 
 > Jako użytkownik,
 > chciałbym wyznaczyć widoczny cel oszczędnościowy z kwotą,
 > aby mieć motywację i kontrolę nad oszczędnościami.
+
+**Cel biznesowy:** 
+Wspierać użytkowników poprzez wizualne cele oszczędnościowe,
+które motywują do kontynuowania z naszymi usługami.
 
 **Kryteria Akceptacji:** 
 * **WF-GOAL-01: Ustalenie nowego celu oszczędnościowego**
@@ -244,10 +260,10 @@ patrz dodatek b
 > aż cała strona z danymi mi się załaduje,
 > chciałbym widzieć etapowe (sukcesywne) załadowanie poszczególnych elementów.
 
-**Cel Biznesowy:** Użytkownik nie myśli, że nasza strona zawiesza się lub ma jakieś problemy.
+**Cel Biznesowy:** 
+Użytkownik nie myśli, że nasza strona zawiesza się lub ma jakieś problemy.
 
 **Kryteria Akceptacji:**
-
 * **WF-ETAP-01: Ładowanie etapami (Scenariusz Główny)**
     **Given:** Użytkownik wchodzi na naszą stronę albo aplikację mobilną.
     **When:** Użytkownik widzi jak etapowo ładuję się UI.
