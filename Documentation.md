@@ -159,9 +159,28 @@ patrz dodatek b
 
 
 ### 3.2. Kategoryzowanie wydatków
-**Opis:** Przypisywanie etykiet do transakcji.
+**Opis:** Przypisywanie kolorowych etykiet do transakcji.
 **Historyjka Użytkownika:** 
-**Kryteria Akceptacji (Gherkin):** 
+> Jako użytkownik,
+> chcę nie tylko odróżnić swoje transakcje nazwami,
+> ale też kolorami. 
+**Kryteria Akceptacji:** 
+
+* **WF-KAT-WYD-01: Dodanie etykiety z kolorem (Scenariusz Główny)**
+    * **Given:** Wchodzę na stronę 
+    * **When:** dodaję transakcję 
+    * **Then:** wybieram etykietę do transakcji
+    * **And:** daję kolor etykiecie.
+
+* **WF-KAT-WYD-02: Dodanie etykiety bez koloru (Scenariusz Alternatywny)**
+    * **Given:** Wchodzę na stronę 
+    * **When:** dodaję transakcję 
+    * **Then:** wybieram etykietę do transakcji
+
+* **WF-KAT-WYD-02: Nie dodanie etykiety (Scenariusz Alternatywny)**
+    * **Given:** Wchodzę na stronę 
+    * **When:** dodaję transakcję 
+    * **Then:** nie wybrać do etykietę do transakcji
 
 ### 3.3. Zarządzanie budżetami (Dodawanie budżetów)
 **Opis:** Możliwość ustalenia limitu wydatków na daną kategorię w miesiącu.
