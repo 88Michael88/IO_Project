@@ -343,7 +343,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
     * Odczyt danych musi trwać: 
         * 200ms średnio, a
         * 500ms powinien być dziewięćdziesiątym percentylem.
-    * Wykresy muszą generować się w 100ms dla 100 rekordów danych.
+    * Wykresy muszą muszą być wstanie obsłużyć 100 rekordów w średnio 100ms.
 
 ### 4.2. Scenariusze Jakościowe (Dla TOP 3)
 
@@ -409,8 +409,8 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 | **Bodziec**       | Klient otwiera zakładkę "Raport" i wybiera jak chciałby przedstawić dane. |
 | **Artefakt**      | Graficzny Interface Użytkownika. |
 | **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                                               |
-| **Reakcja**       | System |
-| **Miara reakcji** | |
+| **Reakcja**       | System wygeneruje odpowiedni raport.          |
+| **Miara reakcji** | Raport na każde 100 rekordów będzie potrzebował średnio 100ms. |
 
 
 ### 4.3. Analiza kompromisów architektonicznych
