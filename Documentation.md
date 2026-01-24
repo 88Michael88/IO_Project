@@ -157,7 +157,6 @@ patrz dodatek b
     * **Then:** Przycisk "Zapisz" pozostaje nieaktywny.
     * **And:** Wyświetla się komunikat walidacji.
 
-
 ### 3.2. Kategoryzowanie wydatków
 **Opis:** Przypisywanie kolorowych etykiet do transakcji.
 **Historyjka Użytkownika:** 
@@ -175,17 +174,37 @@ patrz dodatek b
 * **WF-KAT-WYD-02: Dodanie etykiety bez koloru (Scenariusz Alternatywny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
-    * **Then:** wybieram etykietę do transakcji
+    * **Then:** wybieram etykietę do transakcji.
 
 * **WF-KAT-WYD-02: Nie dodanie etykiety (Scenariusz Alternatywny)**
     * **Given:** Wchodzę na stronę 
     * **When:** dodaję transakcję 
-    * **Then:** nie wybrać do etykietę do transakcji
+    * **Then:** nie wybrać do etykietę do transakcji.
 
 ### 3.3. Zarządzanie budżetami (Dodawanie budżetów)
 **Opis:** Możliwość ustalenia limitu wydatków na daną kategorię w miesiącu.
 **Historyjka Użytkownika:** 
-**Kryteria Akceptacji (Gherkin):** 
+> Jako użytkownik,
+> chcąc mieć finansową niezależność,
+> muszę zacząć panować nad pewnymi kategoriami zakupów,
+> aby zacząć nad tym panować muszę ustalić limity.
+**Kryteria Akceptacji:** 
+
+* **WF-CONT-BUD-01: Dodanie limitu na daną kategorię (Scenariusz Główny)**
+    * **Given:** Wchodzę do zakładki "Budżet"
+    * **And:** znajduję się pod kategorii "Zarządzanie budżetem"
+    * **When:** ustalę limit na daną kategorię w konkretny miesiąc
+    * **Then:** limit zostanie zapisany.
+    
+* **WF-CONT-BUD-02: Powiadomienie o zbliżeniu się do limitu (Scenariusz Główny)**
+    * **Given:** Ustalę limit na daną kategorię w konkretnym miesiącu
+    * **When:** wydam 80% budżetu w danej kategorii 
+    * **Then:** dostanę powiadomienie o zbliżeniu się do limitu.
+
+* **WF-CONT-BUD-03: Powiadomienie o przekroczeniu limitu (Scenariusz Główny)**
+    * **Given:** Ustalę limit na daną kategorię w konkretnym miesiącu
+    * **When:** wydam ponad 100% budżetu w danej kategorii 
+    * **Then:** dostanę powiadomienie o przekroczeniu limitu
 
 ### 3.4. Cele oszczędnościowe
 **Opis:** Definiowanie celu (np. "Wakacje") i kwoty docelowej.
