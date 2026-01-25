@@ -426,10 +426,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 
 ## 5. Odkrywanie i Analiza Wymagań
 
-### 5.1. Analiza Porównawcza (Benchmarking)
-
-**Identyfikacja Konkurencji/Wzorców**  
-Do analizy wybrano pięć rozwiązań reprezentujących różne segmenty rynku, które stanowią punkt odniesienia dla wymagań funkcjonalnych i niefunkcjonalnych systemu Wise Finance.
+### Identyfikacja Konkurencji/Wzorców
 
 1.  **Monefy**
     * Konkurencja bezpośrednia.
@@ -462,7 +459,7 @@ Do analizy wybrano pięć rozwiązań reprezentujących różne segmenty rynku, 
     * Koncentruje się na płatnościach (konta wielowalutowe, przelewy natychmiastowe, inwestycje). Posiada moduły budżetowania, jednak nie są one głównym celem aplikacji.
     * Stanowi wzorzec projektowy dla interfejsu (UI). Ze względu na dużą popularność, zaadaptowanie podobnych rozwiązań wizualnych pozwoli użytkownikom szybciej zrozumieć obsługę naszej aplikacji (wykorzystanie nawyków użytkownika).
 
-**Tabela z kryteriami obejmującymi kluczowe aspekty**
+### 5.2 Tabela z kryteriami obejmującymi kluczowe aspekty
   
 | Aplikacja | Model wprowadzania danych | UX: Dostępność i wygoda na różnych platformach | Czas dodawania transakcji | Funkcjonalność budżetowania | Funkcjonalność analityczna i statystyczna | Model biznesowy |
 | :---              | :--- |:--- |:--- |:--- |:--- |:--- |
@@ -473,30 +470,32 @@ Do analizy wybrano pięć rozwiązań reprezentujących różne segmenty rynku, 
 | **Aplikacje bankowe** | Automatyczny, podział na konta bankowe | Aplikacja Mobilna i Serwis WWW. Standardowa wygoda, ale interfejs często bywa "zaśmiecony" reklamami pożyczek i ofertami banku. | Zerowy (Automat) | Podstawowa (Zależna od banku) | Prosta historia transakcji. Zazwyczaj ogranicza się do listy przelewów i prostego podsumowania miesiąca. | Darmowy |
 | **Revolut**           | Automatyczny, podział na konta bankowe | Aplikacja Mobilna. Nowoczesna i ładna, bardzo intuicyjna w obsłudze. | Zerowy (Automat) | Podstawowa (Kieszonki/Cele) | Interaktywne, atrakcyjne wizualnie wykresy.| Darmowy z opcją premium |
 
-**Synteza wyników**
-1. **Co konkurencja robi dobrze?**
-    * Łatwość obsługi i szybkość interakcji (Monefy):
-        * Największą zaletą liderów rynku aplikacji z manualnym wprowadzaniem danych jest minimalizacja liczby kliknięć. 
-        * Użytkownik może dodać wydatek w mniej niż 5 sekund zaraz po jego wykonaniu, integrując wprowadzanie transakcji z dziennymi czynnościami.
-    * Potężne narzędzia statystyczne (YNAB): 
-        * Rozwiązania wykorzystywane w ofercie płatnej oferują wgląd w kondycję finansową wykraczający poza zwykłe sumowanie wydatków i tworzenie wykresów. 
-        * Metryki takie jak "Age of Money" czy wykresy Wartości Netto w czasie pozwalają na zaawansowane planowanie długoterminowe.
-    * Estetyka wizualna (Revolut): 
-        * Wykorzystywanie interaktywnych i łatwo zrozumiałych wykresów oraz czytelnej kategoryzacji opartej na ikonach zachęca użytkowników do korzystania z oferowanych statystyk i zachęca do analizy danych.
-2. **Gdzie są ich słabe punkty?**
-    * Bariera wejścia (Excel i YNAB): 
-        * Arkusze kalkulacyjne wymagają samodzielnego tworzenia formuł i są trudne do korzystania na urządzeniach mobilnych. 
-        * YNAB narzuca zbyt rygorystyczną metodologię i wysoką cenę, co odstrasza początkujących użytkowników, którzy chcielby skorzystać z oferowanych funkcji statystycznych.
-    * Ograniczenia platformowe (Monefy): 
-        * Proste aplikacje mobilne często nie posiadają wersji webowej, co utrudnia głębszą analizę raportów na dużym ekranie.
-    * Brak możliwości integracji wielu kont bankowych (Aplikacje bankowe, Revolut): 
-        * Banki oferują doskonałą automatyzację, ale nie pozwalają na grupowanie danych z różnych kont w jedno miejsce. 
-        * Użytkownicy muszą polegać na innych aplikacjach, aby grupować finanse z wielu kont bankowych.
-3. **Jakie unikalne funkcje oferują?**
-    * Wizualizacja postępów: Paski postępu przy budżetach (zamiast samych liczb) pozwalają szybciej ocenić stan finansów.
-    * Szybkie wybieranie kategorii: Zastąpienie listy rozwijanej, siatka dużych ikon znacznie przyspiesza proces dodawania transakcji na ekranach dotykowych.
-    * Wirtualne Cele Oszczędnościowe (Skarbonki): Funkcja znana z Revoluta, pozwalająca wirtualnie wydzielić część środków na konkretny cel (np. "Wakacje") pozwala na proste planowanie długoplanowe, niezależnie od celów oszczędnościowych.
-    * Wbudowany kalkulator: Integracja prostego kalkulatora bezpośrednio w polu wpisywania kwoty (np. wpisanie "12 + 4.50"). Pozwala to użytkownikowi zsumować kilka pozycji z paragonu bez wychodzenia z aplikacji.
+### 5.3 Synteza wyników ###
+**Co konkurencja robi dobrze?**
+1. Łatwość obsługi i szybkość interakcji (Monefy):
+    * Największą zaletą liderów rynku aplikacji z manualnym wprowadzaniem danych jest minimalizacja liczby kliknięć. 
+    * Użytkownik może dodać wydatek w mniej niż 5 sekund zaraz po jego wykonaniu, integrując wprowadzanie transakcji z dziennymi czynnościami.
+2. Potężne narzędzia statystyczne (YNAB): 
+    * Rozwiązania wykorzystywane w ofercie płatnej oferują wgląd w kondycję finansową wykraczający poza zwykłe sumowanie wydatków i tworzenie wykresów. 
+    * Metryki takie jak "Age of Money" czy wykresy Wartości Netto w czasie pozwalają na zaawansowane planowanie długoterminowe.
+3. Estetyka wizualna (Revolut): 
+    * Wykorzystywanie interaktywnych i łatwo zrozumiałych wykresów oraz czytelnej kategoryzacji opartej na ikonach zachęca użytkowników do korzystania z oferowanych statystyk i zachęca do analizy danych.
+
+**Gdzie są ich słabe punkty?**
+1. Bariera wejścia (Excel i YNAB): 
+    * Arkusze kalkulacyjne wymagają samodzielnego tworzenia formuł i są trudne do korzystania na urządzeniach mobilnych. 
+    * YNAB narzuca zbyt rygorystyczną metodologię i wysoką cenę, co odstrasza początkujących użytkowników, którzy chcielby skorzystać z oferowanych funkcji statystycznych.
+2. Ograniczenia platformowe (Monefy): 
+    * Proste aplikacje mobilne często nie posiadają wersji webowej, co utrudnia głębszą analizę raportów na dużym ekranie.
+3. Brak możliwości integracji wielu kont bankowych (Aplikacje bankowe, Revolut): 
+    * Banki oferują doskonałą automatyzację, ale nie pozwalają na grupowanie danych z różnych kont w jedno miejsce. 
+    * Użytkownicy muszą polegać na innych aplikacjach, aby grupować finanse z wielu kont bankowych.
+
+**Jakie unikalne funkcje oferują?**
+1. Wizualizacja postępów: Paski postępu przy budżetach (zamiast samych liczb) pozwalają szybciej ocenić stan finansów.
+2. Szybkie wybieranie kategorii: Zastąpienie listy rozwijanej, siatka dużych ikon znacznie przyspiesza proces dodawania transakcji na ekranach dotykowych.
+3. Wirtualne Cele Oszczędnościowe (Skarbonki): Funkcja znana z Revoluta, pozwalająca wirtualnie wydzielić część środków na konkretny cel (np. "Wakacje") pozwala na proste planowanie długoplanowe, niezależnie od celów oszczędnościowych.
+4. Wbudowany kalkulator: Integracja prostego kalkulatora bezpośrednio w polu wpisywania kwoty (np. wpisanie "12 + 4.50"). Pozwala to użytkownikowi zsumować kilka pozycji z paragonu bez wychodzenia z aplikacji.
 
 **Wnioski:**
 ---
