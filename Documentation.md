@@ -428,14 +428,75 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 
 ### 5.1. Analiza Porównawcza (Benchmarking)
 
-**Analizowana konkurencja:**
-1.  Excel / Google Sheets (Konkurencja pośrednia).
-2.  YNAB (You Need A Budget) - lider rynku.
-3.  Aplikacje bankowe (np. mBank manager finansów).
-4.  dopisac
+**Identyfikacja Konkurencji/Wzorców**  
+Do analizy wybrano pięć rozwiązań reprezentujących różne segmenty rynku, które stanowią punkt odniesienia dla wymagań funkcjonalnych i niefunkcjonalnych systemu Wise Finance.
 
-**Tabela porównawcza:**
-zrobic tabele
+1.  **Monefy**
+    * Konkurencja bezpośrednia.
+    * Darmowa aplikacja mobilna, której priorytetem jest szybkość i łatwość obsługi.
+    * Oferuje uproszczony system budżetowania oparty na wykresie kołowym (wizualizacja wydatków) oraz limity budżetowe z systemem ostrzeżeń.
+    * Bardzo szybki proces dodawania transakcji, wymagający od użytkownika jedynie wprowadzenia kwoty i wybrania ikony.
+    * Wybierana przez osoby, które chcą rejestrować wydatki natychmiast po ich wykonaniu i widzieć status budżetu bez konieczności głębszej analizy finansowej.
+2.  **YNAB (You Need A Budget)**
+    * Konkurencja bezpośrednia.
+    * Rozbudowany, płatny system budżetowy działający wieloplatformowo (desktop/mobile).
+    * Posiada zaawansowany system statystyk oraz funkcje dla zaawansowanych użytkowników (np. planer spłaty pożyczek, autorska metryka Age of Money). 
+    * Oferuje integrację z bankami (automatyczny import transakcji) oraz własnoręczne wprowadzanie niestandardowych transakcji.
+    * Wybierana przez osoby poszukujące potężnego narzędzia do szczegółowej analizy finansów i planowania długoterminowego w wolnym czasie.
+3.  **Excel / Google Sheets**
+    * Konkurencja pośrednia.
+    * Uniwersalne arkusze kalkukacyjne.
+    * Brak wbudowanej logiki budżetowej – użytkownik musi samodzielnie tworzyć system za pomocą formuł.Wymaga manualne wprowadzanie danych do tabel w wyznaczone miejsca.
+    * Wymaga manualne wprowadzanie danych do tabel w wyznaczone miejsca.
+    * Tabele i skomplikowane arkusze są trudne w obsłudze i słabo skalują się na mniejszych ekranach (smartfon, tablet).
+    * Rozwiązanie dla entuzjastów "DIY" (zrób to sam), którzy cenią pełną niezależność, elastyczność i totalną kontrolę nad sposobem obliczania swoich finansów.
+4.  **Aplikacje bankowe (np. mBank manager finansów)**
+    * Konkurencja pośrednia.
+    * Narzędzie ściśle zintegrowane z kontem bankowym użytkownika.
+    * Oferują podstawowe moduły statystyk i budżetowania, zależne od konkretnego banku.
+    * Zintegrowane z kontem bankowym, automatycznie wprowadza transakcje przeprowadzane za pomocą środków na tym koncie, ale nie pozwalają na dodawanie niestandardowych transakcji (w tym operacji gotówkowych).
+    * Użytkownicy korzystają z nich "domyślnie" przy okazji posiadania konta, traktując je jako dodatek, a nie dedykowane narzędzie analityczne.
+5.  **Revolut**
+    * Wzorzec funkcjonalny.
+    * Kompleksowa aplikacja finansowa.
+    * Koncentruje się na płatnościach (konta wielowalutowe, przelewy natychmiastowe, inwestycje). Posiada moduły budżetowania, jednak nie są one głównym celem aplikacji.
+    * Stanowi wzorzec projektowy dla interfejsu (UI). Ze względu na dużą popularność, zaadaptowanie podobnych rozwiązań wizualnych pozwoli użytkownikom szybciej zrozumieć obsługę naszej aplikacji (wykorzystanie nawyków użytkownika).
+
+**Tabela z kryteriami obejmującymi kluczowe aspekty**
+  
+| Aplikacja | Model wprowadzania danych | UX: Dostępność i wygoda na różnych platformach | Czas dodawania transakcji | Funkcjonalność budżetowania | Funkcjonalność analityczna i statystyczna | Model biznesowy |
+| :---              | :--- |:--- |:--- |:--- |:--- |:--- |
+| **Wise Finance**      | Manualny                               | Aplikacja Webowa. Czysty i czytelny interfejs. | Niski (<10s) | Proste limity + Cele Oszczędnościowe | Dedykowane Wykresy + Tabele. Czytelna wizualizacja struktury wydatków i wpływów. | Darmowy |
+| **Monefy**            | Manualny                               | Aplikacja Mobilna. Bardzo prosta i intuicyjna. | Bardzo niski (<5s) | Ostrzeżenia o limitach | Prosta wizualizacja procentowego udziału kategorii w wydatkach. | Darmowy z opcją premium |
+| **YNAB**              | Manualny + Automatyczny                | Aplikacja Webowa i Mobilna. Bardzo rozbudowany i skomplikowany interfejs. | Niski (<10s) lub Zerowy (Automat) | Rygorystyczne (Zero-based Budgeting) | Zaawansowana analityka. Obejmuje wiele wykresów oraz unikalną metrykę "Age of Money". | Płatny (Subskrypcja) |
+| **Excel / Sheets**    | Manualny                               | Program Komputerowy. Wygodny na dużym ekranie, ale na telefonie bardzo trudny w obsłudze | Zależny od implementacji użytkownika | Brak (Wymaga stworzenia formuł) | Własna konfiguracja. Użytkownik ma pełną swobodę tworzenia dowolnych wykresów, ale musi je sam zaprojektować. | Darmowy |
+| **Aplikacje bankowe** | Automatyczny, podział na konta bankowe | Aplikacja Mobilna i Serwis WWW. Standardowa wygoda, ale interfejs często bywa "zaśmiecony" reklamami pożyczek i ofertami banku. | Zerowy (Automat) | Podstawowa (Zależna od banku) | Prosta historia transakcji. Zazwyczaj ogranicza się do listy przelewów i prostego podsumowania miesiąca. | Darmowy |
+| **Revolut**           | Automatyczny, podział na konta bankowe | Aplikacja Mobilna. Nowoczesna i ładna, bardzo intuicyjna w obsłudze. | Zerowy (Automat) | Podstawowa (Kieszonki/Cele) | Interaktywne, atrakcyjne wizualnie wykresy.| Darmowy z opcją premium |
+
+**Synteza wyników**
+1. **Co konkurencja robi dobrze?**
+    * Łatwość obsługi i szybkość interakcji (Monefy):
+        * Największą zaletą liderów rynku aplikacji z manualnym wprowadzaniem danych jest minimalizacja liczby kliknięć. 
+        * Użytkownik może dodać wydatek w mniej niż 5 sekund zaraz po jego wykonaniu, integrując wprowadzanie transakcji z dziennymi czynnościami.
+    * Potężne narzędzia statystyczne (YNAB): 
+        * Rozwiązania wykorzystywane w ofercie płatnej oferują wgląd w kondycję finansową wykraczający poza zwykłe sumowanie wydatków i tworzenie wykresów. 
+        * Metryki takie jak "Age of Money" czy wykresy Wartości Netto w czasie pozwalają na zaawansowane planowanie długoterminowe.
+    * Estetyka wizualna (Revolut): 
+        * Wykorzystywanie interaktywnych i łatwo zrozumiałych wykresów oraz czytelnej kategoryzacji opartej na ikonach zachęca użytkowników do korzystania z oferowanych statystyk i zachęca do analizy danych.
+2. **Gdzie są ich słabe punkty?**
+    * Bariera wejścia (Excel i YNAB): 
+        * Arkusze kalkulacyjne wymagają samodzielnego tworzenia formuł i są trudne do korzystania na urządzeniach mobilnych. 
+        * YNAB narzuca zbyt rygorystyczną metodologię i wysoką cenę, co odstrasza początkujących użytkowników, którzy chcielby skorzystać z oferowanych funkcji statystycznych.
+    * Ograniczenia platformowe (Monefy): 
+        * Proste aplikacje mobilne często nie posiadają wersji webowej, co utrudnia głębszą analizę raportów na dużym ekranie.
+    * Brak możliwości integracji wielu kont bankowych (Aplikacje bankowe, Revolut): 
+        * Banki oferują doskonałą automatyzację, ale nie pozwalają na grupowanie danych z różnych kont w jedno miejsce. 
+        * Użytkownicy muszą polegać na innych aplikacjach, aby grupować finanse z wielu kont bankowych.
+3. **Jakie unikalne funkcje oferują?**
+    * Wizualizacja postępów: Paski postępu przy budżetach (zamiast samych liczb) pozwalają szybciej ocenić stan finansów.
+    * Szybkie wybieranie kategorii: Zastąpienie listy rozwijanej, siatka dużych ikon znacznie przyspiesza proces dodawania transakcji na ekranach dotykowych.
+    * Wirtualne Cele Oszczędnościowe (Skarbonki): Funkcja znana z Revoluta, pozwalająca wirtualnie wydzielić część środków na konkretny cel (np. "Wakacje") pozwala na proste planowanie długoplanowe, niezależnie od celów oszczędnościowych.
+    * Wbudowany kalkulator: Integracja prostego kalkulatora bezpośrednio w polu wpisywania kwoty (np. wpisanie "12 + 4.50"). Pozwala to użytkownikowi zsumować kilka pozycji z paragonu bez wychodzenia z aplikacji.
 
 **Wnioski:**
 ---
