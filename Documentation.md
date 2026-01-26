@@ -533,7 +533,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 3. Wirtualne Cele Oszczędnościowe (Skarbonki): Funkcja znana z Revoluta, pozwalająca wirtualnie wydzielić część środków na konkretny cel (np. "Wakacje") pozwala na proste planowanie długoplanowe, niezależnie od celów oszczędnościowych.
 4. Wbudowany kalkulator: Integracja prostego kalkulatora bezpośrednio w polu wpisywania kwoty (np. wpisanie "12 + 4.50"). Pozwala to użytkownikowi zsumować kilka pozycji z paragonu bez wychodzenia z aplikacji.
 
-### 5. 4 Wnioski: ###
+### 5.4 Wnioski: ###
 
 Na podstawie analizy konkurencji, Wise Finance pozycjonuje się w niszy "złotego środka":
 1. Dostępność: W przeciwieństwie do Monefy (tylko mobile) i Excela (tylko desktop), Wise Finance będzie systemem webowym (RWD), dostępnym wygodnie na obu platformach.
