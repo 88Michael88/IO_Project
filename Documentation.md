@@ -167,6 +167,12 @@ Zbudowanie bazy danych do analizy finansowej.
     * **Then:** Przycisk "Zapisz" pozostaje nieaktywny.
     * **And:** Wyświetla się komunikat walidacji.
 
+* **WF-TRANS-03: Użycie wbudowanego kalkulatora (Funkcjonalność UX)**
+    * **Given:** Znajduję się w polu wpisywania kwoty podczas dodawania transakcji.
+    * **When:** Wpisuję proste działanie matematyczne zamiast jednej liczby.
+    * **Then:** System automatycznie oblicza wynik działania w czasie rzeczywistym po walidacji pola kwoty.
+    * **And:** Obliczona suma zostaje przypisana jako kwota transakcji.
+
 ### 3.2. Kategoryzowanie wydatków
 **Opis:** Przypisywanie kolorowych etykiet do transakcji.
 
@@ -533,7 +539,7 @@ Na podstawie analizy konkurencji, Wise Finance pozycjonuje się w niszy "złoteg
 1. Dostępność: W przeciwieństwie do Monefy (tylko mobile) i Excela (tylko desktop), Wise Finance będzie systemem webowym (RWD), dostępnym wygodnie na obu platformach.
 2. Szybkość vs Analityka: Priorytetem jest szybkość dodawania transakcji zbliżona do Monefy, ale z analityką lepszą niż w aplikacjach bankowych.
 3. Model: Rezygnujemy z automatycznej integracji bankowej (jak w YNAB), aby uniknąć barier prawnych i kosztowych, stawiając na prostotę manualnego wprowadzania danych.
-4. Adaptacja Wzorców UX: Kluczem do sukcesu aplikacji manualnych jest minimalizacja kliknięć i prostota wprowadzania danych. Dlatego w Wise Finance zaadoptujemy siatkę ikon do wyboru kategorii oraz wprowadzimy wbudowany kalkulator w polach do wpisywania kwoty.
+4. Adaptacja Wzorców UX: Kluczem do sukcesu aplikacji manualnych jest minimalizacja kliknięć i prostota wprowadzania danych. Dlatego w Wise Finance wprowadzimy wbudowany kalkulator w polach do wpisywania kwoty.
 
 
 ## Dodatki
