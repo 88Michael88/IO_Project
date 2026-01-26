@@ -29,6 +29,6 @@
     - [x] 5.2
 
 - Appendix
-    - [ ] A
+    - [X] A
     - [x] B
     - [x] C
