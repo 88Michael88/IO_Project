@@ -544,8 +544,9 @@ Na podstawie analizy konkurencji, Wise Finance pozycjonuje się w niszy "złoteg
 
 ## Dodatki
 
-## Dodatek A: Diagramy
-* Diagram Przypadków Użycia (Use Case Diagram)
+## Dodatek A: Use Case Diagramy
+
+![This is a simple Use Case Diagram](UseCaseDiagram.svg)
   
 ## Dodatek B: Persony Użytkowników
 
