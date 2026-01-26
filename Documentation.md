@@ -113,7 +113,7 @@ Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzie
 * **Wpływ na architekturę:** Rezygnacja z automatycznej integracji z bankami API.
 
 **Ograniczenie 4: Ilość generowanych danych**
-* **Ograniczenie:** System musi przedstawić wiarygodne dany użytkownikowi. Nie może zgubić transakcji lub ją policzyć dwa razy.
+* **Ograniczenie:** System musi przedstawić wiarygodne dane użytkownikowi. Nie może zgubić transakcji lub ją policzyć dwa razy.
 * **Źródło:** Użytkownicy będą zapisywać oraz importować ogromne ilości danych, a nasz system musi to zapisać.
 * **Wpływ na architekturę:** 
     * Baza danych musi priorytetyzować spójność danych (Consistency) oraz dostępność (Availability).
