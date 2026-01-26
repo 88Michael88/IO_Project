@@ -74,6 +74,7 @@ Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzie
 **Rozdział 3 (Wymagania Funkcjonalne):** Zawiera szczegółowy opis funkcji systemu w formie Historyjek Użytkownika wraz z Kryteriami Akceptacji oraz analizą MVP.  
 **Rozdział 4 (Atrybuty Jakościowe):** Definiuje wymagania niefunkcjonalne, opisane za pomocą mierzalnych scenariuszy jakościowych i analizy kompromisów architektonicznych.  
 **Rozdział 5 (Odkrywanie i Analiza Wymagań):** Zawiera analizę porównawczą konkurencji, która uzasadnia podjęte decyzje projektowe i pozycjonowanie produktu na rynku.  
+**Dodatki:** Zawierają materiały uzupełniające, w tym diagramy przypadków użycia, opisy person użytkowników oraz listę pytań i niejasności, które pojawiły się w trakcie analizy.  
 
 ---
 
