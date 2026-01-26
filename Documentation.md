@@ -569,4 +569,13 @@ Korzystała z Excela, ale męczy ją ciągłe wpisywanie formuł i to, że na te
 **Czego oczekuje od Aplikacji:**
 Karolina będzie korzystać z funkcji **Budżetów** (wymaganie 3.3). Ustawi sobie limit na "Ubrania" i "Wyjścia", żeby system ją ostrzegał, jak przesadzi. Bardzo zależy jej na **Celach Oszczędnościowych** (wymaganie 3.4) – chce widzieć pasek postępu zbierania na samochód, bo to ją motywuje. Raz w tygodniu siada do komputera (wersja webowa), żeby popatrzeć na **Raporty i Wykresy** (wymaganie 3.5) i przeanalizować, gdzie może uciąć koszty.
 
+### 3. Michał, "Minister Finansów" w domu
+Michał ma 36 lat, żonę, dwójkę dzieci w wieku szkolnym oraz kredyt hipoteczny. Pracuje na etacie, a ich domowy budżet jest mocno napięty: na bieżąco trzeba opłacać rachunki, wydatki związane ze szkołą, zajęciami dodatkowymi oraz codzienne zakupy spożywcze dla czteroosobowej rodziny.
+
+**Jaki ma problem:**
+Gubi się w paragonach. Często pod koniec miesiąca jest zaskoczony, że konto jest puste, a przecież "nic wielkiego nie kupowali". Zdarza mu się czasami kłócić z żoną o to, gdzie podziały się pieniądze, bo nie mają twardych danych, tylko domysły.
+
+**Czego oczekuje od Aplikacji:**
+Michał potrzebuje **Raportów** (wymaganie 3.5), żeby mieć jasną sytuację. Chce usiąść w weekend i zobaczyć na wykresie, że konkretna kwota poszła na jedzenie na mieście i że trzeba to ograniczyć. Będzie też mocno korzystał z **Kategorii** (wymaganie 3.2), żeby oddzielić wydatki na dom, paliwo i dzieciaki. Dla niego ta aplikacja to sposób na opanowanie domowego chaosu finansowego.
+
 ## Dodatek C: Kwestie do Rozwiązania
