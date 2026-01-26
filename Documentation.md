@@ -554,7 +554,11 @@ Aby lepiej zrozumieć potrzeby naszych przyszłych klientów, stworzyliśmy dwie
 ### 1. Marek, wieczny student
 Marek ma 22 lata i studiuje dziennie, a w weekendy dorabia w gastronomii. Jego dochody są nieregularne: raz dostanie napiwki, raz stypendium, a czasem musi pożyczyć od rodziców.
 
+**Jaki ma problem:**
+Marek zupełnie nie ma pojęcia, gdzie jego pieniądze rozchodzą się. Na koniec każdego miesiąca zawsze brakuje mu na "życie", chociaż wydaje mu się, że nic dużego nie kupował. Chciał spisać wydatki w notatniku w telefonie, ale szybko o tym zapominał, bo zajmowało to za dużo czasu i było niewygodne.
 
+**Czego oczekuje od Wise Finance:**
+Marek potrzebuje aplikacji, którą odpali w 3 sekundy stojąc w kolejce do kasy w Biedronce albo płacąc za piwo w barze. Chce po prostu wpisać kwotę "15 zł", kliknąć ikonkę "Jedzenie" i zapomnieć. Najważniejsza jest dla niego **szybkość** (zgodnie z wymaganiem WF-TRANS-01) i wbudowany **kalkulator**, bo czasem płaci za kilka rzeczy naraz i nie chce liczyć w pamięci (wymaganie WF-TRANS-03). Nie interesują go skomplikowane wykresy giełdowe, chce tylko wiedzieć, czy stać go na imprezę w weekend.
 
 ### 2. Karolina, młoda pracująca
 Karolina ma 27 lat, pierwszą stałą pracę w korporacji i właśnie wynajęła mieszkanie. Zarabia nieźle, ale chce zacząć oszczędzać na własny samochód i wakacje. Jest zorganizowana i lubi mieć kontrolę.
