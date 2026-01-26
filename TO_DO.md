@@ -31,4 +31,4 @@
 - Appendix
     - [ ] A
     - [x] B
-    - [ ] C
+    - [x] C
