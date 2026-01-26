@@ -339,6 +339,8 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
     * **Etapowe ładowanie (3.6):** Jest to usprawnienie UX, które ma niską wartość biznesową w początkowej fazie. Zostanie zrealizowane dopiero po stabilizacji głównych funkcji.
     * **Cele oszczędnościowe (3.4):** Zostały oznaczone jako "MOŻE". Jeśli starczy czasu po implementacji Raportów i Budżetów, zostaną dodane, ponieważ są stosunkowo tanie w implementacji (niski koszt), ale nie są krytyczne dla podstawowego procesu kontroli wydatków.
 
+--- 
+
 ## 4. Atrybuty Jakościowe (Wymagania Niefunkcjonalne)
 
 ### 4.1. Wybór i priorytetyzacja atrybutów
