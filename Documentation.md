@@ -353,7 +353,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
     * Klienci muszą móc wprowadzać dane codziennie, często wiele razy, aby utrzymać aktualność budżetu.
     * Interface jest intuitywny: 
         * Nowy użytkownik powinien być w stanie dodać nową transakcję do 50 sekund.
-        * Użytkownik z ponad 10 wpisanymi transakcjami powinien być w stanie dodać nową transakcję w mniej niż 15 sekund.
+        * Użytkownik z ponad 10 wpisanymi transakcjami powinien być w stanie dodać nową transakcję w mniej niż 10 sekund.
     * Logiczne ustawienie opcji: Nowy użytkownik powinien być w stanie poznać wszystkie główne opcje w ciągu pięciu minut eksplorowania aplikacji.
 3.  **Wydajność** 
     * Dodając nową transakcję po zakupach oraz sprawdzając statystyki podczas codziennych czynności klient nie powinien być spowalniany przez działanie aplikacji.
