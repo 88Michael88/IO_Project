@@ -88,9 +88,14 @@ Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzie
 * Moduł Agregacji Danych z Innych Źródeł
 
 ### 2.2. Klasy Użytkowników
-* **Użytkownik Standardowy:** opis
-* **Administrator Systemu:** opis
-patrz dodatek b 
+* **Użytkownik Standardowy:** 
+    * Osoba fizyczna chcąca kontrolować swoje finanse osobiste. 
+    * Posiada dostęp do własnych danych, edycji budżetu i raportów. 
+    * Częstotliwość użycia: codzienna.
+* **Administrator Systemu:** 
+    * Personel techniczny odpowiedzialny za utrzymanie ciągłości działania serwisu.
+    * Ma dostęp do zarządzania kopiami zapasowymi i zarządzania kontami użytkowników. 
+    * Nie ma wglądu w dane finansowe użytkowników.
 
 ### 2.3. Ograniczenia projektowe
 **Ograniczenie 1: Technologiczne**
