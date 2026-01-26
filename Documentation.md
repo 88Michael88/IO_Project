@@ -580,31 +580,6 @@ Gubi się w paragonach. Często pod koniec miesiąca jest zaskoczony, że konto 
 Michał potrzebuje **Raportów** (wymaganie 3.5), żeby mieć jasną sytuację. Chce usiąść w weekend i zobaczyć na wykresie, że konkretna kwota poszła na jedzenie na mieście i że trzeba to ograniczyć. Będzie też mocno korzystał z **Kategorii** (wymaganie 3.2), żeby oddzielić wydatki na dom, paliwo i dzieciaki. Dla niego ta aplikacja to sposób na opanowanie domowego chaosu finansowego.
 
 ## Dodatek C: Kwestie do Rozwiązania
-## Dodatek B: Persony Użytkowników
-
-W celu lepszego zrozumienia potrzeb naszych przyszłych klientów stworzyliśmy dwie fikcyjne postacie, które reprezentują naszych typowych użytkowników. To pomaga nam projektować funkcje tak, żeby faktycznie im się przydały, a nie były tylko "sztuką dla sztuki".
-
-### 1. Marek, wieczny student
-Marek ma 22 lata i studiuje dziennie, a w weekendy dorabia w gastronomii. Jego dochody są nieregularne – raz dostanie napiwki, raz stypendium, a czasem musi pożyczyć od rodziców.
-
-**Jaki ma problem:**
-Marek kompletnie nie wie, gdzie rozchodzą mu się pieniądze. Pod koniec miesiąca zawsze brakuje mu na "życie", mimo że wydaje mu się, że nic dużego nie kupował. Próbował spisywać wydatki w notatniku w telefonie, ale szybko o tym zapominał, bo zajmowało to za dużo czasu i było niewygodne.
-
-**Czego oczekuje od Wise Finance:**
-Marek potrzebuje aplikacji, którą odpali w 3 sekundy stojąc w kolejce do kasy w Biedronce albo płacąc za piwo w barze. Chce po prostu wpisać kwotę "15 zł", kliknąć ikonkę "Jedzenie" i zapomnieć. Najważniejsza jest dla niego **szybkość** (zgodnie z wymaganiem WF-TRANS-01) i wbudowany **kalkulator**, bo czasem płaci za kilka rzeczy naraz i nie chce liczyć w pamięci (wymaganie WF-TRANS-03). Nie interesują go skomplikowane wykresy giełdowe, chce tylko wiedzieć, czy stać go na imprezę w weekend.
-
-### 2. Karolina, młoda pracująca
-Karolina ma 27 lat, pierwszą stałą pracę w korporacji i właśnie wynajęła mieszkanie. Zarabia nieźle, ale chce zacząć oszczędzać na własny samochód i wakacje. Jest zorganizowana i lubi mieć kontrolę.
-
-**Jaki ma problem:**
-Korzystała z Excela, ale męczy ją ciągłe wpisywanie formuł i to, że na telefonie tabelki są nieczytelne. Chce widzieć, ile procent pensji idzie na mieszkanie, a ile na przyjemności. Boi się, że bez kontroli wyda wszystko, co zarobi, zamiast odłożyć.
-
-**Czego oczekuje od Wise Finance:**
-Karolina będzie korzystać z funkcji **Budżetów** (wymaganie 3.3). Ustawi sobie limit na "Ubrania" i "Wyjścia", żeby system ją ostrzegał, jak przesadzi. Bardzo zależy jej na **Celach Oszczędnościowych** (wymaganie 3.4) – chce widzieć pasek postępu zbierania na samochód, bo to ją motywuje. Raz w tygodniu siada do komputera (wersja webowa), żeby popatrzeć na **Raporty i Wykresy** (wymaganie 3.5) i przeanalizować, gdzie może uciąć koszty.
-
----
-
-## Dodatek C: Kwestie do Rozwiązania
 
 **1. Co robimy z walutami?**
 Na etapie MVP zakładamy, że wszystkie operacje są prowadzone w złotówkach (PLN). Pojawia się jednak pytanie, co w sytuacji, gdy Marek (nasz użytkownik z dodatku B) wyjedzie na Erasmusa albo Karolina zrobi zakupy na Amazonie w euro.
