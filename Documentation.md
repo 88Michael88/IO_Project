@@ -28,6 +28,9 @@ System "Wise Finance" będzie realizował następujące procesy:
 6.  Zgromadzenie danych finansowych z różnych źródeł.
 
 **Cele Biznesowe i Użytkowników (KPIs):**
+1. Retencja: 30% użytkowników, którzy założyli konto, doda przynajmniej jedną transakcję w drugim miesiącu użytkowania.
+2. Aktywność: Średnia liczba transakcji dodawanych przez aktywnego użytkownika wyniesie min. 15 miesięcznie.
+3. Niezawodność: Dostępność systemu na poziomie 99.9% w godzinach szczytu (8:00 - 22:00).
 
 **Poza Zakresem:**
 1. System nie będzie doradzał klientom jak gospodarować bogactwem.
@@ -520,8 +523,14 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 3. Wirtualne Cele Oszczędnościowe (Skarbonki): Funkcja znana z Revoluta, pozwalająca wirtualnie wydzielić część środków na konkretny cel (np. "Wakacje") pozwala na proste planowanie długoplanowe, niezależnie od celów oszczędnościowych.
 4. Wbudowany kalkulator: Integracja prostego kalkulatora bezpośrednio w polu wpisywania kwoty (np. wpisanie "12 + 4.50"). Pozwala to użytkownikowi zsumować kilka pozycji z paragonu bez wychodzenia z aplikacji.
 
-**Wnioski:**
----
+### 5. 4 Wnioski: ###
+
+Na podstawie analizy konkurencji, Wise Finance pozycjonuje się w niszy "złotego środka":
+1. Dostępność: W przeciwieństwie do Monefy (tylko mobile) i Excela (tylko desktop), Wise Finance będzie systemem webowym (RWD), dostępnym wygodnie na obu platformach.
+2. Szybkość vs Analityka: Priorytetem jest szybkość dodawania transakcji zbliżona do Monefy, ale z analityką lepszą niż w aplikacjach bankowych.
+3. Model: Rezygnujemy z automatycznej integracji bankowej (jak w YNAB), aby uniknąć barier prawnych i kosztowych, stawiając na prostotę manualnego wprowadzania danych.
+4. Adaptacja Wzorców UX: Kluczem do sukcesu aplikacji manualnych jest minimalizacja kliknięć i prostota wprowadzania danych. Dlatego w Wise Finance zaadoptujemy siatkę ikon do wyboru kategorii oraz wprowadzimy wbudowany kalkulator w polach do wpisywania kwoty.
+
 
 ## Dodatki
 
