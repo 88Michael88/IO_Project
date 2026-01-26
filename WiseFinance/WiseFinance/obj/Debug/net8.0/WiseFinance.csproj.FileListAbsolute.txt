@@ -1,0 +1,15 @@
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/bin/Debug/net8.0/WiseFinance
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/bin/Debug/net8.0/WiseFinance.deps.json
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/bin/Debug/net8.0/WiseFinance.runtimeconfig.json
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/bin/Debug/net8.0/WiseFinance.dll
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/bin/Debug/net8.0/WiseFinance.pdb
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.AssemblyInfoInputs.cache
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.AssemblyInfo.cs
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.csproj.CoreCompileInputs.cache
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.sourcelink.json
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.dll
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/refint/WiseFinance.dll
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.pdb
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/WiseFinance.genruntimeconfig.cache
+/Users/thatsfov1/Documents/pk/rok3_sem1/io/IO_Project/WiseFinance/WiseFinance/obj/Debug/net8.0/ref/WiseFinance.dll
