@@ -132,7 +132,7 @@ Poniższa sekcja definiuje całą terminologię używaną w dokumencie SRS, dzie
     * **Co:** Sprawdzimy przepustowość naszej bazy danych.
     * **Jak:** Prosty skrypt zostanie napisany, który:
         * będzie zapisywał (INSERT) coraz więcej danych,
-            * średni czas zapisu rekordu powinna wynosić do 10ms,
+            * średni czas zapisu rekordu powinien wynosić do 10ms,
         * będzie czytał (SELECT) coraz więcej danych,
             * średni czas odczytu 100 rekordów powinien wynosić do 50ms.
     * **Kiedy:** Przy wyborze bazy danych.
