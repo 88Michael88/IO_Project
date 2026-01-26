@@ -177,7 +177,7 @@ Zbudowanie bazy danych do analizy finansowej.
 
 **Cel biznesowy:** 
 Ułatwić użytkownikowi rozpoznawanie oraz analizę transakcji,
-co ma zachęcić do częstszego wykorzystania aplikacji.
+co ma zachęcić do częstszego korzystania aplikacji.
 
 **Kryteria Akceptacji:** 
 * **WF-KAT-WYD-01: Dodanie etykiety z kolorem (Scenariusz Główny)**
