@@ -544,8 +544,21 @@ Na podstawie analizy konkurencji, Wise Finance pozycjonuje się w niszy "złoteg
 
 ## Dodatki
 
-### Dodatek A: Diagramy
+## Dodatek A: Diagramy
 * Diagram Przypadków Użycia (Use Case Diagram)
-### Dodatek B: Persony Użytkowników
+  
+## Dodatek B: Persony Użytkowników
 
-### Dodatek C: Kwestie do Rozwiązania
+Aby lepiej zrozumieć potrzeby naszych przyszłych klientów, stworzyliśmy dwie fikcyjne postacie, które reprezentują naszych typowych użytkowników. To pomaga nam projektować funkcje, które będą im naprawdę przydatne.
+
+### 1. Marek, wieczny student
+Marek ma 22 lata i studiuje dziennie, a w weekendy dorabia w gastronomii. Jego dochody są nieregularne: raz dostanie napiwki, raz stypendium, a czasem musi pożyczyć od rodziców.
+
+
+
+### 2. Karolina, młoda pracująca
+Karolina ma 27 lat, pierwszą stałą pracę w korporacji i właśnie wynajęła mieszkanie. Zarabia nieźle, ale chce zacząć oszczędzać na własny samochód i wakacje. Jest zorganizowana i lubi mieć kontrolę.
+
+
+
+## Dodatek C: Kwestie do Rozwiązania
