@@ -334,9 +334,13 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
     * Nie możemy pozwolić na jakikolwiek wyciek danych, który by identyfikował naszych klientów oraz ich stan finansowy.
     * Nasze serwisy będą działać jedynie z protokołami wersji `Secure`.
 2.  **Użyteczność**
-    * Interface jest intuitywny: Nowy użytkownik powinien być wstanie nową transakcję do 50 sekund.
-    * Logiczne ustawienie opcji: Nowy użytkownik powinien być wstanie poznać wszystkie główne opcje w ciągu pięciu minut eksplorowania aplikacji.
+    * Klienci muszą móc wprowadzać dane codziennie, często wiele razy, aby utrzymać aktualność budżetu.
+    * Interface jest intuitywny: 
+        * Nowy użytkownik powinien być w stanie dodać nową transakcję do 50 sekund.
+        * Użytkownik z ponad 10 wpisanymi transakcjami powinien być w stanie dodać nową transakcję w mniej niż 15 sekund.
+    * Logiczne ustawienie opcji: Nowy użytkownik powinien być w stanie poznać wszystkie główne opcje w ciągu pięciu minut eksplorowania aplikacji.
 3.  **Wydajność** 
+    * Dodając nową transakcję po zakupach oraz sprawdzając statystyki podczas codziennych czynności klient nie powinien być spowalniany przez działanie aplikacji.
     * Zapisywanie do 100 rekordów danych musi trwać:
         * 300ms średnio, a
         * 800ms powinien być dziewięćdziesiątym percentylem.
@@ -344,6 +348,20 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
         * 200ms średnio, a
         * 500ms powinien być dziewięćdziesiątym percentylem.
     * Wykresy muszą muszą być wstanie obsłużyć 100 rekordów w średnio 100ms.
+4.  **Skalowalność**
+    * Użytkownicy będą wprowadzali nowe transakcje wiele razy dziennie i chcieli widzieć statystyki ze swoich transakcji przez długi okres czasowy.
+    * Aplikacja musi działać poprawnie przy ponad 10000 transakcjach przypisanych do przynajmniej 100 użytkowników.
+    * System musi być gotowy do przyjmowania przynajmniej 1000 nowych transakcji dziennie.
+5.  **Dostępność**
+    * Użytkownicy będą chcieli dodawać transakcje i sprawdzać statystyki w różnych godzinach, kiedy będą wykonywać płatności i oczekują, że aplikacja także będzie wtedy dostępna.
+    * Aplikacja musi być dostępna przez 99.9% czasu.
+    * Przerwy techniczne nie mogą być dłuższe niż 1 godzina.
+6.  **Przenośność**
+    * Aplikacja powinna działać na wielu systemach i urządzeniach, aby użytkownicy mogli z niej korzystać na dowolnym dostępnym urządzeniu w momencie zrobienia transakcji i dodania jej do aplikacji.
+    * System musi być tworzony bez uwzględnienia konkretnego środowiska i musi być testowany na co najmniej 3 różnych urządzeniach.
+7. **Modyfikowalność**
+    * Aplikacja musi otrzymywać nowe aktualizacje poprawiające istniejące systemy i dodające nowe funkcjonalności, aby pozyskiwać nowych klientów i utrzymywać użytkowników korzystających z aplikacji.
+    * Architektura systemu musi zapewniać separację warstw, aby zmiany w interfejsie użytkownika nie wymuszały modyfikacji w logice biznesowej.
 
 ### 4.2. Scenariusze Jakościowe (Dla TOP 3)
 
@@ -415,12 +433,17 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 
 ### 4.3. Analiza kompromisów architektonicznych
 
-* **Bezpieczeństwo vs Wydajność:** 
-    * Szyfrowanie każdego rekordu w bazie spowolni wyszukiwanie i generowanie raportów, ale jest konieczne dla ochrony prywatności.
-    * Szyfrowanie każdego kanału komunikacji doda dodatkowy stały koszt szyfrowanie oraz deszyfrowania, jednak dla produktu takiego typu jest to niezbędne.
+1. **Bezpieczeństwo**
+    * Szyfrowanie danych wymaga dodatkowej mocy obliczeniowej na serwerze bazy danych i serwerze aplikacji. Może to wpłynąć na opóźnienia, co utrudnia realizację celów wydajnościowych.
+    * Szyfrowanie danych wrażliwych (kwoty, opisy) nie da się łatwo indeksować i przeszukiwać, co prowadzi do utraty możliwości wykonywania szybkich zapytań po stronie bazy danych.
+    * Wdrożenie wysokich standardów bezpieczeństwa obniża komfort użytkowania, który musi przejść przez dodatkowe zabezpieczenia za każdym razem kiedy próbuje uzyskać dostęp do konta.
 
-* **Bezpieczeństwo vs Aktualizacje:**
-    * Ze względu na dodatkowe testy, które będą potwierdzały bezpieczeństwo naszego systemu, to finalne aktualizacje mogę być opóźniane.
+2. **Użyteczność**
+    * Ukrywanie opcji, aby interfejs był wygodny dla nowych użytkowników zmusza zaawansowanych użytkowników do wykonania większej liczby kliknięć, aby dotrzeć do potrzebnych funkcji.
+    * Aby ekran był czytelny ilość danych na jednym ekranie musi być jak najmniejsza. Użytkownik musi wtedy więcej przewijać, aby zobaczyć dokładniejsze statystyki.
+
+3. **Wydajność**
+    * Każdy nowy indeks w bazie danych przyspiesza szukanie danych, ale duża ilość indeksów spowalnia zapis danych.
 
 ---
 
