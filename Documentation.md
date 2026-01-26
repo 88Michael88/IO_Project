@@ -11,7 +11,7 @@
 
 Wise Finance 1.0
 
-Dokument ma na celu...
+Dokument ma na celu jednoznacznie określić oraz opisać, co, dlaczego oraz w jakim zakresie **Wise Finanse 1.0** zostanie zbudowany.
 
 ### 1.2. Wizja, Zakres i Cele Produktu
 
