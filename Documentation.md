@@ -391,7 +391,7 @@ Na podstawie przeprowadzonej analizy ilościowej, do wersji **MVP (Minimum Viabl
 | **Artefakt**      | Połączenie pomiędzy klientem, a naszym serwerem.                                      |
 | **Środowisko**    | Normalna praca systemu, serwer produkcyjny.                                           |
 | **Reakcja**       | Każde połączenie z użytkownikiem jest szyfrowane.                                     |
-| **Miara reakcji** | Każdy kanał komunikacji będze wykożystywał protokół wersji Secure. Każdy kanał będzie testowany, aby zweryfikować poprawność konfiguracji. |
+| **Miara reakcji** | Każdy kanał komunikacji będze wykorzystywał protokół wersji Secure. Każdy kanał będzie testowany, aby zweryfikować poprawność konfiguracji. |
 
 
 **Scenariusz 3: Użyteczność (Logicznie ułożony interface)**
