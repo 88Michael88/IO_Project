@@ -15,6 +15,7 @@ namespace WiseFinance
         private Wallet() { }
 
         public IEnumerable<Event> GetChanges() => _changes;
+        public void ClearChanges() => _changes.Clear();
 
         public static Wallet Create(Guid ownerId, string currency)
         {
@@ -25,25 +26,32 @@ namespace WiseFinance
             return wallet;
         }
         
+        public static Wallet LoadFromHistory(IEnumerable<Event> history)
+        {
+            var wallet = new Wallet();
+            foreach (var evt in history)
+            {
+                wallet.Apply(evt);
+            }
+            return wallet;
+        }
+
         public void RegisterIncome(decimal amount, string category, string description)
         {
-            if (amount <= 0)
-                throw new ArgumentException("Kwota przychodu musi być większa od zera.");
-
+            if (amount <= 0) throw new ArgumentException("Kwota musi być dodatnia.");
             var evt = new IncomeRecorded(Id, amount, category, description);
             Apply(evt);
             _changes.Add(evt);
         }
-        
+
         public void RegisterExpense(decimal amount, string category, string description)
         {
-            if (amount <= 0)
-                throw new ArgumentException("Kwota wydatku musi być większa od zera.");
-
+            if (amount <= 0) throw new ArgumentException("Kwota musi być dodatnia.");
             var evt = new ExpenseRecorded(Id, amount, category, description);
             Apply(evt);
             _changes.Add(evt);
         }
+
         private void Apply(Event evt)
         {
             switch (evt)
@@ -54,11 +62,9 @@ namespace WiseFinance
                     Currency = e.Currency;
                     Balance = 0;
                     break;
-
                 case IncomeRecorded e:
                     Balance += e.Amount;
                     break;
-
                 case ExpenseRecorded e:
                     Balance -= e.Amount;
                     break;
